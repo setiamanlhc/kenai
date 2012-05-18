@@ -1,0 +1,10 @@
+from django.conf.urls.defaults import patterns, include, url
+
+
+urlpatterns = patterns('web.views', (r'^$','index'),
+    (r'^smsbroadcast/','smsbroadcast'),
+    (r'^services/','services'),
+    (r'^webmobile/','webmobile'),
+    (r'^contact/','contact'),
+    
+)

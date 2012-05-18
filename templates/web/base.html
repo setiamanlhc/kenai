@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Welcome to Kenai Pte Ltd</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="Web application development, web mobile using Django" />
+  <meta http-equiv="content-type" content="text/html; charset=WINDOWS-1252" />
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine&amp;v1" />
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" />
+  <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}web/css/style.css" />
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <h1>Kena<a href="#">i</a></h1>
+        <div class="slogan">We make better Web App</div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+        {% block menu %}{% endblock %}
+        </ul>
+      </div>
+    </div>
+    <div id="site_content">
+      <div id="sidebar_container">
+      {% block sidebar %}{% endblock %}
+      </div>
+      <div id="content">
+      {% block content %}{% endblock %}
+      </div>
+    </div>
+    <div id="footer">
+      <p>Copyright  Kenai Pte Ltd</p>
+    </div>
+  </div>
+</body>
+</html>
